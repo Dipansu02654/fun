@@ -8,7 +8,7 @@ if ($_SERVER["request_method"]==="POST") {
   if(array_key_exists($username, $acc_list)){
     if($acc_list[$username]===$Password){
       setcookie("user",$username,["samesite"="strict"]);
-      header("location: file:///C:/Users/maa/Desktop/MY%20PROJECTS/D-Gym/home.php");
+      header("location: home.php");
     }else{
      $msg = "password is incorrect";
    }
